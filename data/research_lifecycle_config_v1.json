@@ -1,0 +1,33 @@
+{
+  "version": "research_lifecycle_v1",
+  "mae_frequency": "MONTHLY",
+  "document_validity_days": {
+    "ANNUAL_OUTLOOK": 180,
+    "MIDYEAR_OUTLOOK": 180,
+    "QUARTERLY_OUTLOOK": 90,
+    "ASSET_OUTLOOK": 90,
+    "MONTHLY_OUTLOOK": 60,
+    "WEEKLY_COMMENTARY": 30,
+    "CENTRAL_BANK": 180,
+    "RATING_OUTLOOK": 180,
+    "NEWS_EVENT": 14
+  },
+  "aging_threshold_days": {
+    "ANNUAL_OUTLOOK": 90,
+    "MIDYEAR_OUTLOOK": 90,
+    "QUARTERLY_OUTLOOK": 60,
+    "ASSET_OUTLOOK": 60,
+    "MONTHLY_OUTLOOK": 45,
+    "WEEKLY_COMMENTARY": 21,
+    "CENTRAL_BANK": 90,
+    "RATING_OUTLOOK": 90,
+    "NEWS_EVENT": 7
+  },
+  "freshness_weights": {
+    "ACTIVE": 1.0,
+    "AGING": 0.7,
+    "CARRIED_FORWARD": 0.85,
+    "AGING_CARRIED_FORWARD": 0.6
+  },
+  "news_event_research_score_allowed": false
+}

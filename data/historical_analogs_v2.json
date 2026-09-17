@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.0",
+  "methodology_version": "HISTORICAL_ANALOGS_V2.0",
+  "universe_label": "US-led market context",
+  "minimum_factor_coverage": 0.7,
+  "minimum_separation_months": 6,
+  "main_outcome_horizons_months": [3, 6, 12],
+  "critical_factors": [
+    "inflation_regime",
+    "policy_stance",
+    "real_yield_regime",
+    "credit_spread_regime"
+  ],
+  "factors": {
+    "inflation_regime": {"weight": 0.2, "source": "CPIAUCSL", "critical": true},
+    "policy_stance": {"weight": 0.2, "source": "FEDFUNDS minus lagged CPI inflation", "critical": true},
+    "real_yield_regime": {"weight": 0.15, "source": "DFII10", "critical": true},
+    "credit_spread_regime": {"weight": 0.15, "source": "BAMLH0A0HYM2", "critical": true},
+    "equity_breadth": {"weight": 0.15, "source": "RSP / SPY six-month relative return", "critical": false},
+    "growth_style_leadership": {"weight": 0.15, "source": "IWF / IWD six-month relative return", "critical": false}
+  },
+  "downstream_use": {
+    "mae_cell_scores": "PROHIBITED",
+    "scenario_probabilities": "PROHIBITED",
+    "purpose": "Descriptive supplementary context only"
+  }
+}
